@@ -1,0 +1,27 @@
+<div>
+  <nav class="navbar navbar-expand-lg nav">
+    <a class="navbar-brand">Synonyms</a>
+  </nav>
+</div>
+<div class="container" style="text-align:center">
+  <div class="card card-section">
+    <div class="card-body">
+      <div class="card-title card-section-title">Synonyms</div>
+      <form>
+        <div class="form-group" style="text-align:left">
+          <label for="exampleInputtext">What do you want to search?</label>
+          <input type="email" class="form-control" id="exampleInputtext" aria-describedby="textHelp" placeholder="Enter what you want to search" #name>
+          <small id="textHelp" class="form-text text-muted" style="text-align:center">We provide the best search
+            results.</small>
+        </div>
+      </form>
+      <button type="button" class="btn btn-success" style="padding:15px" (click)=getInputData(name)>
+        <span class="btn-text">Search</span>
+      </button>
+    </div>
+  </div>
+</div>
+<app-words [wordItems]="items"></app-words>
+
+
+
